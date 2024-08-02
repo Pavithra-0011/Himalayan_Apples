@@ -1,0 +1,80 @@
+.Modal-Container
+{
+    background-color: rgb(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Model
+    {
+        height: 500px;
+        width: 1000px;
+        background-color: rgb(255,255,255,0.6);
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        .Content 
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 650px;
+        }
+        input 
+        {
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px 10px;
+
+        }
+    }
+    .Modal-buttons
+    {
+        margin: auto;
+        button
+        {
+            height: 40px;
+            width: 120px;
+            color: white;
+            font-size: 17px;
+            background-color: black;
+            margin: 10px !important;
+        }
+        button:hover 
+        {
+            background-color: white;
+            color: black;
+        }
+    }
+    .Sucess 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.6s ease-in;
+        p 
+        {
+            color: black;
+            font-size: 30px;
+            font-weight: 500px;
+        }
+        button 
+        {
+            height: 40px;
+            width: 120px;
+            color: white;
+            font-size: 17px;
+            background-color: black;
+        }
+    }
+
+}

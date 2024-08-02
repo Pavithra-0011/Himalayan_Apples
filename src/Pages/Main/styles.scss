@@ -1,0 +1,586 @@
+body::-webkit-scrollbar {
+  display: none; 
+}
+body
+{
+  background-image: url('../../assets/Background2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  // padding: 30px 55px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  // font-weight: <weight>;
+  // font-style: normal;
+}
+.Hero
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 20px 50px 30px 50px;
+  h2 
+  {
+    color: white;
+    font-weight: 700;
+  }
+  button 
+  {
+    color: white;
+    background: none;
+    height: 40px;
+    width: 120px;
+    border: 1px solid white;
+  }
+}
+.Container
+{
+  background: rgb(0,0,0,0.3);
+  height: 500px;
+  width: 1250px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  color: white;
+  .Herosection
+  {
+    color: white;
+    height: 300px;
+    width:1100px;
+    margin-left:30px;
+    align-content: center;
+    p
+    {
+      font-style: italic;
+      font-size: 20px;
+    }
+    .Buttons
+    {
+      margin-top: 50px;
+      .buy 
+      {
+        color: Black;
+        background: white;
+        font-size: 17px;
+        height: 50px;
+        width: 150px;
+        border: 1px solid white;
+        margin: 0 5px;
+      }
+      .ask 
+      {
+        color: white;
+        background: Black;
+        font-size: 17px;
+        height: 50px;
+        width: 150px;
+        border: 1px solid black;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.Container2
+{
+  @extend .Container;
+  align-items: flex-start !important;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  flex-direction: column ;
+  .title 
+  {
+    margin-left: 30px !important;
+  }
+  .contents
+  {
+    height: 250px;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px !important;
+    // background-color: palegreen;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    .descriptions
+    {
+      width: 800px;
+      align-content: center;
+      font-style: oblique;
+      font-size: 18px;
+    }
+    .Image
+    {
+      //  height: 250px;
+       border: 2px solid wheat;
+      img 
+      {
+        height: 250px;
+        width: 300px;
+
+      }
+    }
+  }
+}
+.Container3
+{
+  @extend .Container;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 1190px !important;
+  height: fit-content;
+    .Images
+    {
+      height: 250px;
+      width: 1100px;
+      display: flex;
+      justify-content: space-between;
+      .wrap
+      {
+        height: 200px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img1
+        {
+          height: 200px;
+          width: 250px;
+          border: 2px solid white;
+          img 
+          {
+            height: 200px;
+            width: 250px;
+            position: relative;
+          }
+        }
+        .cont
+        {
+          position: absolute;
+          background: rgb(0,0,0,0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 200px;
+          width: 250px;
+          opacity: 0;
+          transition: 0.3s ease-in-out ;
+        }
+        .cont:hover{
+           opacity: 1;
+           transform-origin: 10px;
+        }
+      }
+    }
+    
+  }
+  .Container5
+  {
+    @extend .Container;
+    justify-content: space-between !important;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    width: 1220px !important;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .form
+    {
+      h2 
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input 
+      {
+        height: 30px;
+        width: 400px;
+        font-size: 13px;
+        border-radius: 5px ;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+      }
+      h4 
+      {
+        margin: 5px;
+      }
+      button 
+      {
+        height: 40px;
+        width: 425px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        margin: 10px 0px;
+        background-color: black;
+        color: white;
+      }
+      button:hover
+      {
+        scale: 1.1;
+      }
+    }
+    .Sucess-message 
+    {
+      width: 1000px;
+      // height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      .context 
+      {
+        color: white;
+        font-size: 20px;
+        font-style: normal;
+      }
+    }
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: white; 
+  transform-origin: 0%;
+  z-index: 1000;
+}    
+footer
+{
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  body {
+    padding: 30px 55px;
+  }
+
+  .Hero {
+    flex-direction: column;
+    height: auto;
+    margin: 10px;
+    h2 {
+      font-size: 20px;
+    }
+    button {
+      height: 35px;
+      width: 100px;
+    }
+  }
+
+  .Container {
+    width: 90%;
+    height: fit-content;
+    padding: 40px 10px 40px 10px;
+    .Herosection {
+      width: 100%;
+      margin-left: 0;
+      p {
+        font-size: 11px;
+        width: 95%;
+        margin: 0;
+      }
+      .Buttons {
+        flex-direction: column;
+        .buy, .ask {
+          width:100px; 
+          height: 40px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .Container2 {
+    padding: 20px 10px 60px 10px;
+    height: fit-content !important;
+    .title {
+      margin-bottom: 60px !important;
+      font-size: 20px;
+    }
+    .contents {
+      flex-direction: row;
+      .descriptions {
+        width: 100%;
+        font-size: 13px;
+      }
+      .Image {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+    .Container3
+    { 
+      .More
+      {
+        font-size: 20px;
+      }
+      padding-left: 20px !important;
+      padding-left: 10px;
+      padding-bottom: 30px;
+      width: 90% !important;
+      height: 580px !important;
+        .Images
+        {
+          height: 500px !important;
+          width: 650px !important;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          .wrap
+          {
+            height: 100px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img1
+            {
+              height: 100px;
+              width: 1400px;
+              border: 2px solid white;
+              img {
+              height: 100px;
+              width: 140px;
+                position: relative;
+              }
+            }
+          }
+        }
+    }
+
+  .Container5 {
+    width: 90% !important;
+    padding: 10px;
+    .form {
+      input {
+        width: 100%;
+        font-size: 14px;
+      }
+      button {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .Sucess-message {
+      width: 100%;
+      .context {
+        font-size: 18px;
+      }
+    }
+  }
+
+  footer {
+    height: auto;
+    padding: 10px;
+  }
+
+  .progress-bar {
+    height: 5px;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .Hero {
+    height: 60px;
+    margin: 25px;
+    h2 {
+      font-size: 22px;
+    }
+    button {
+      height: 35px;
+      width: 110px;
+    }
+  }
+
+  .Container {
+    width: 90%;
+    .Herosection {
+      width: 100%;
+      p {
+        font-size: 15px;
+        width: 90%;
+      }
+      .Buttons
+    {
+      margin-top: 30px;
+      .buy 
+      {
+        font-size: 15px;
+        height: 45px;
+        width: 130px;
+        border: 1px solid white;
+        margin: 0 7px;
+      }
+      .ask 
+      {
+        font-size: 15px;
+        height: 45px;
+        width: 130px;
+        margin: 0 7px;
+        border: 1px solid black;
+      }
+    }
+    }
+  }
+
+  .Container2
+   {
+    width: 87%;
+    height: fit-content;
+    padding-right: 20px;
+    .contents {
+      flex-direction: row;
+      margin-bottom: 135px;
+      
+      .descriptions {
+        width: 300px;
+        font-size: 15px;
+      }
+      .Image {
+        height: 200px;
+        width: 250px;
+        img {
+          height: 200px;
+        width: 250px;
+        }
+      }
+    }
+  }
+
+.Container3
+{ 
+  align-items: flex-start !important;
+  flex-direction: column !important;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  width: 655px !important;
+  height: 250px;
+    .Images
+    {
+      height: 250px;
+      width: 650px !important;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrap
+      {
+        height: 100px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img1
+        {
+          height: 100px;
+          width: 1400px;
+          border: 2px solid white;
+          img {
+          height: 100px;
+          width: 140px;
+            position: relative;
+          }
+        }
+        .cont
+        {
+          position: absolute;
+          background: rgb(0,0,0,0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 100px;
+          width: 140px;
+          font-size: 10px;
+          opacity: 0;
+          transition: 0.3s ease-in-out ;
+        }
+        .cont:hover{
+           opacity: 1;
+           transform-origin: 10px;
+        }
+      }
+    }
+}
+  .Container5 {
+    max-width: 640px;
+    .form {
+      input {
+        width:300px;
+        font-size: 14px;
+      }
+      button {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 60px;
+  }
+
+  .progress-bar {
+    height: 8px;
+  }
+}
+
+/* Laptop and Desktop Devices */
+@media (min-width: 769px) {
+  .Hero {
+    height: 50px;
+    margin: 20px 50px;
+    h2 {
+      font-size: 24px;
+    }
+    button {
+      height: 40px;
+      width: 120px;
+    }
+  }
+
+  .Container {
+    width: 1250px;
+  }
+
+  .Container2, .Container3 {
+    width: 1220px;
+  }
+
+  .Container5 {
+    width: 1220px;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  .progress-bar {
+    height: 10px;
+  }
+}
